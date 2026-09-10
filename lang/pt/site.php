@@ -14,6 +14,6 @@ return [
     ]],
     'gallery' => ['eyebrow' => 'Galeria', 'title' => 'A montanha, do lado de dentro', 'open' => 'Ampliar fotografia', 'viewer' => 'Visualizador de fotos', 'close' => 'Fechar visualizador', 'previous' => 'Fotografia anterior', 'next' => 'Próxima fotografia'],
     'dividers' => ['winter' => 'Chateau Catedral entre pinheiros cobertos de neve', 'fire' => 'O fogo aceso da lareira'],
-    'location' => ['title' => 'Localização', 'p1' => 'Estamos em Villa Catedral, na base do Cerro Catedral, em Bariloche, a apenas 200 metros das pistas.', 'p2' => 'Um refúgio privilegiado para viver a montanha e voltar caminhando ao aconchego da cabana.', 'map' => 'Ver a região no Google Maps', 'note' => 'A localização exata será informada no momento da reserva.'],
+    'location' => ['title' => 'Localização', 'p1' => 'Estamos em Villa Catedral, na base do Cerro Catedral, em Bariloche, a apenas 200 metros das pistas.', 'p2' => 'Um refúgio privilegiado para viver a montanha e voltar caminhando ao aconchego da cabana.', 'map' => 'Abrir no Google Maps', 'address' => 'Martín Jereb 9857, R8401 San Carlos de Bariloche, Río Negro', 'map_title' => 'Mapa interativo da localização do Chateau Catedral'],
     'contact' => ['kicker' => 'Consultas e reservas', 'title' => 'Sua próxima viagem<br>começa aqui', 'text' => 'Consulte disponibilidade e tarifas para as datas da sua viagem.', 'note' => 'Para confirmar a reserva, solicitamos um sinal de 50%. O saldo é pago na chegada.', 'whatsapp' => 'Consultar pelo WhatsApp'],
 ];

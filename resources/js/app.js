@@ -14,6 +14,16 @@ nav?.addEventListener('click', (event) => {
     }
 });
 
+const languageScrollKey = 'chateau-language-scroll';
+document.querySelectorAll('[data-language-link]').forEach((link) => {
+    link.addEventListener('click', () => sessionStorage.setItem(languageScrollKey, String(window.scrollY)));
+});
+const savedLanguageScroll = sessionStorage.getItem(languageScrollKey);
+if (savedLanguageScroll !== null) {
+    sessionStorage.removeItem(languageScrollKey);
+    requestAnimationFrame(() => requestAnimationFrame(() => window.scrollTo(0, Number(savedLanguageScroll))));
+}
+
 document.querySelector('[data-year]').textContent = new Date().getFullYear();
 
 const lightbox = document.querySelector('[data-lightbox]');
