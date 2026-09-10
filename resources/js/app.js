@@ -21,7 +21,6 @@ const galleryButtons = [...document.querySelectorAll('[data-gallery-index]')];
 if (lightbox && galleryButtons.length) {
     const photos = JSON.parse(document.querySelector('#gallery-data').textContent);
     const imageArea = lightbox.querySelector('[data-lightbox-image]');
-    const caption = lightbox.querySelector('[data-lightbox-caption]');
     const closeButton = lightbox.querySelector('.lightbox-close');
     let current = 0;
     let previousFocus;
@@ -42,7 +41,6 @@ if (lightbox && galleryButtons.length) {
             placeholder.innerHTML = '<span>Chateau Catedral</span><small>Fotografía próximamente</small>';
             imageArea.append(placeholder);
         }
-        caption.textContent = photo.alt;
     };
     const open = (index) => {
         current = index; previousFocus = document.activeElement; render();
