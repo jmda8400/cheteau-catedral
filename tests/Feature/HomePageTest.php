@@ -9,7 +9,8 @@ class HomePageTest extends TestCase
     {
         $this->get('/')
             ->assertOk()
-            ->assertSee('Tu refugio al pie del Cerro Catedral')
+            ->assertSee('La cabaña')
+            ->assertSee('Tu próxima escapada')
             ->assertSee('WhatsApp Video 2026-09-09 at 16.34.09.mp4')
             ->assertSee('ee7d3680-b6a2-4cad-b2a2-88f6d3e60f4f.png')
             ->assertSee('whatsapp-icon');
