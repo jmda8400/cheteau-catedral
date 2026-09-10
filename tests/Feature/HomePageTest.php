@@ -13,7 +13,10 @@ class HomePageTest extends TestCase
             ->assertSee('Tu próxima escapada')
             ->assertSee('WhatsApp Video 2026-09-09 at 16.34.09.mp4')
             ->assertSee('ee7d3680-b6a2-4cad-b2a2-88f6d3e60f4f.png')
-            ->assertSee('whatsapp-icon');
+            ->assertSee('whatsapp-icon')
+            ->assertSee('Martín Jereb 9857')
+            ->assertSee('output=embed', false)
+            ->assertSee('linkedin.com/in/juanmanueldiazarbues', false);
     }
 
     public function test_each_supported_language_can_be_selected(): void
@@ -35,6 +38,7 @@ class HomePageTest extends TestCase
             ->assertOk()
             ->assertSee(config('chateau.whatsapp'), false)
             ->assertSee('class="nav-book"', false)
+            ->assertSee('data-language-link', false)
             ->assertDontSee('data-lightbox-caption', false);
     }
 }
