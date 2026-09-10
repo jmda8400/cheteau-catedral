@@ -9,7 +9,10 @@
     <meta property="og:type" content="website"><meta property="og:locale" content="es_AR">
     <meta property="og:title" content="Chateau Catedral | Cabaña en Villa Catedral, Bariloche">
     <meta property="og:description" content="Cabaña para hasta 7 personas en Villa Catedral, a 200 metros de las pistas.">
-    @if(file_exists(public_path('assets/images/fachada-nevada.png')))<meta property="og:image" content="{{ asset('assets/images/fachada-nevada.png') }}">@endif
+    <meta property="og:image" content="{{ asset('assets/images/WhatsApp Image 2026-09-09 at 16.33.35.jpeg') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Montserrat:wght@300;500&amp;display=swap" rel="stylesheet">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>

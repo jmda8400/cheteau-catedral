@@ -11,8 +11,6 @@ Landing page de la cabaña Chateau Catedral, en Villa Catedral, Bariloche. Está
 
 El contacto, enlace de WhatsApp y datos repetidos están centralizados en `config/chateau.php`.
 
-## Fotografías
+## Contenido visual
 
-Los siete adjuntos indicados para el proyecto no estaban presentes en el repositorio. La página ofrece reemplazos visuales sin enlaces rotos hasta que se copien los originales a `public/assets/images/` con los nombres documentados en [`public/assets/images/README.md`](public/assets/images/README.md). No se utilizaron imágenes de terceros ni ambientes generados.
-
-Una vez incorporados los archivos, se recomienda generar WebP/AVIF después de revisar visualmente los originales; en particular, la imagen del dormitorio ya emplea un encuadre `cover` para evitar mostrar sus franjas negras.
+Las fotografías, el video del hero y el logo de Chateau Catedral están alojados en `public/assets/images/`. La selección que alimenta la galería y sus textos alternativos se centraliza en `config/chateau.php`.
