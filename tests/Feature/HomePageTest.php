@@ -19,6 +19,8 @@ class HomePageTest extends TestCase
             ->assertSee('whatsapp-icon')
             ->assertSee('Martín Jereb 9857')
             ->assertSee('output=embed', false)
+            ->assertDontSee('Recorré cada alojamiento por separado')
+            ->assertDontSee('Elegí tu alojamiento para ver el mapa')
             ->assertSee('linkedin.com/in/juanmanueldiazarbues', false);
     }
 
