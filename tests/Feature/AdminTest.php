@@ -37,7 +37,7 @@ class AdminTest extends TestCase
             ->post('/admin/site-status', ['enabled' => '1'])
             ->assertRedirect('/admin');
 
-        $this->get('/')->assertOk()->assertSee('La cabaña');
+        $this->get('/')->assertOk()->assertSee('Las cabañas');
     }
 
     public function test_guests_cannot_change_site_status(): void
