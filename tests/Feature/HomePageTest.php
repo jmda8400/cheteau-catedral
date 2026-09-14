@@ -9,8 +9,11 @@ class HomePageTest extends TestCase
     {
         $this->get('/')
             ->assertOk()
-            ->assertSee('La cabaña')
+            ->assertSee('Las cabañas')
             ->assertSee('Tu próxima escapada')
+            ->assertSee('El departamento')
+            ->assertSee('La reserva no tiene devolución')
+            ->assertSee('fotos departamento/20200730_181247.jpg')
             ->assertSee('WhatsApp Video 2026-09-09 at 16.34.09.mp4')
             ->assertSee('ee7d3680-b6a2-4cad-b2a2-88f6d3e60f4f.png')
             ->assertSee('whatsapp-icon')
@@ -23,12 +26,12 @@ class HomePageTest extends TestCase
     {
         $this->get('/?lang=en')
             ->assertOk()
-            ->assertSee('The cabin')
+            ->assertSee('The cabins')
             ->assertSee('Your next getaway');
 
         $this->get('/?lang=pt')
             ->assertOk()
-            ->assertSee('A cabana')
+            ->assertSee('As cabanas')
             ->assertSee('Sua próxima viagem');
     }
 
