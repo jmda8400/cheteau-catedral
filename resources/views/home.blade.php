@@ -25,33 +25,42 @@
 
  <div class="photo-divider divider-winter" role="img" aria-label="{{ __('site.dividers.winter') }}"></div>
 
- <section class="story-section alternate" id="comodidades"><div class="container story-grid">
-  <x-image file="WhatsApp Image 2026-09-09 at 16.33.06.jpeg" alt="Detalles artesanales en madera de Chateau Catedral" class="story-image" />
-  <article class="story-card"><h2><span>02</span> {{ __('site.amenities.title') }}</h2><div class="comfort-grid">
-   @foreach(__('site.amenities.items') as $item)<div><h3>{{ $item['title'] }}</h3><p>{{ $item['text'] }}</p></div>@endforeach
-  </div></article>
- </div></section>
-
  <section class="apartment-section" id="departamento"><div class="container">
-  <div class="apartment-intro"><div><p class="section-number">03</p><span class="apartment-eyebrow">{{ __('site.apartment.eyebrow') }}</span><h2>{{ __('site.apartment.title') }}</h2><p>{{ __('site.apartment.intro') }}</p></div><x-image file="fotos departamento/20200730_181247.jpg" :alt="__('site.apartment.image_alt')" /></div>
-  <div class="apartment-details">
-   <article><h3>{{ __('site.apartment.inside_title') }}</h3><ul>@foreach(__('site.apartment.inside') as $item)<li>{{ $item }}</li>@endforeach</ul></article>
-   <article><h3>{{ __('site.apartment.building_title') }}</h3><ul>@foreach(__('site.apartment.building') as $item)<li>{{ $item }}</li>@endforeach</ul></article>
-  </div>
+  <div class="apartment-intro"><div><p class="section-number">02</p><span class="apartment-eyebrow">{{ __('site.apartment.eyebrow') }}</span><h2>{{ __('site.apartment.title') }}</h2><p>{{ __('site.apartment.intro') }}</p></div><x-image file="fotos departamento/20200730_181247.jpg" :alt="__('site.apartment.image_alt')" /></div>
  </div></section>
 
- <section class="gallery" id="galeria"><div class="container"><div class="section-title"><p>04</p><div><span>{{ __('site.gallery.eyebrow') }}</span><h2>{{ __('site.gallery.title') }}</h2></div></div>
-  @foreach([[__('site.gallery.cabins'), $cabinImages], [__('site.gallery.apartment'), $apartmentImages]] as [$groupTitle, $groupImages])
-   <h3 class="gallery-group-title">{{ $groupTitle }}</h3><div class="gallery-grid">@foreach($groupImages as $groupIndex => $photo)@php($index = $loop->parent->index * count($cabinImages) + $groupIndex)<button type="button" class="gallery-item item-{{ $groupIndex + 1 }}" data-gallery-index="{{ $index }}" aria-label="{{ __('site.gallery.open') }}"><x-image :file="$photo['file']" :alt="$photo['alt']" /><span class="gallery-action" aria-hidden="true">↗</span></button>@endforeach</div>
-  @endforeach
+ <div class="photo-divider divider-apartment" role="img" aria-label="{{ __('site.dividers.apartment') }}"></div>
+
+ <section class="amenities-section" id="comodidades"><div class="container"><div class="section-title"><p>03</p><div><span>{{ __('site.amenities.eyebrow') }}</span><h2>{{ __('site.amenities.title') }}</h2></div></div>
+  <div class="amenities-columns">
+   <article class="amenity-panel"><span class="amenity-label">{{ __('site.amenities.cabins') }}</span><div class="comfort-grid">@foreach(__('site.amenities.items') as $item)<div><h3>{{ $item['title'] }}</h3><p>{{ $item['text'] }}</p></div>@endforeach</div></article>
+   <article class="amenity-panel"><span class="amenity-label">{{ __('site.amenities.apartment') }}</span><div class="apartment-details">
+    <div><h3>{{ __('site.apartment.inside_title') }}</h3><ul>@foreach(__('site.apartment.inside') as $item)<li>{{ $item }}</li>@endforeach</ul></div>
+    <div><h3>{{ __('site.apartment.building_title') }}</h3><ul>@foreach(__('site.apartment.building') as $item)<li>{{ $item }}</li>@endforeach</ul></div>
+   </div></article>
+  </div>
  </div></section>
 
  <div class="photo-divider divider-fire" role="img" aria-label="{{ __('site.dividers.fire') }}"></div>
 
- <section class="story-section location" id="ubicacion"><div class="container story-grid">
-  <x-image file="WhatsApp Image 2026-09-09 at 16.32.17.jpeg" alt="Sendero entre pinos cubiertos de nieve en Villa Catedral" class="story-image" />
-  <article class="story-card"><h2><span>05</span> {{ __('site.location.title') }}</h2><p>{{ __('site.location.p1') }}</p><p>{{ __('site.location.p2') }}</p><a class="outline-link" href="https://www.google.com/maps/search/?api=1&amp;query=Mart%C3%ADn+Jereb+9857%2C+San+Carlos+de+Bariloche%2C+R%C3%ADo+Negro" target="_blank" rel="noopener noreferrer">{{ __('site.location.map') }} <span aria-hidden="true">↗</span></a><small>{{ __('site.location.address') }}</small></article>
-  <div class="location-map"><iframe src="https://www.google.com/maps?q=Mart%C3%ADn%20Jereb%209857%2C%20R8401%20San%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro&amp;output=embed" title="{{ __('site.location.map_title') }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+ <section class="gallery" id="galeria"><div class="container"><div class="section-title"><p>04</p><div><span>{{ __('site.gallery.eyebrow') }}</span><h2>{{ __('site.gallery.title') }}</h2><p class="gallery-intro">{{ __('site.gallery.intro') }}</p></div></div>
+  @foreach([[__('site.gallery.cabins'), $cabinImages], [__('site.gallery.apartment'), $apartmentImages]] as [$groupTitle, $groupImages])
+   <div class="gallery-group"><h3 class="gallery-group-title"><span>0{{ $loop->iteration }}</span>{{ $groupTitle }}</h3><div class="gallery-grid">@foreach($groupImages as $groupIndex => $photo)@php($index = $loop->parent->index * count($cabinImages) + $groupIndex)<button type="button" class="gallery-item item-{{ $groupIndex + 1 }}" data-gallery-index="{{ $index }}" aria-label="{{ __('site.gallery.open') }}: {{ $photo['alt'] }}"><x-image :file="$photo['file']" :alt="$photo['alt']" /><span class="gallery-action" aria-hidden="true">↗</span></button>@endforeach</div></div>
+  @endforeach
+ </div></section>
+
+ <div class="photo-divider divider-location" role="img" aria-label="{{ __('site.dividers.location') }}"></div>
+
+ <section class="locations" id="ubicacion"><div class="container">
+  <div class="section-title"><p>05</p><div><span>{{ __('site.location.eyebrow') }}</span><h2>{{ __('site.location.title') }}</h2><p class="locations-intro">{{ __('site.location.intro') }}</p></div></div>
+  <div class="locations-grid">
+   @foreach([
+    ['key' => 'cabins', 'query' => 'Martín Jereb 9857, San Carlos de Bariloche, Río Negro'],
+    ['key' => 'apartment', 'query' => 'Latitud Catedral, Villa Catedral, San Carlos de Bariloche']
+   ] as $place)
+    <article class="location-card"><div class="location-copy"><span class="location-type">{{ __('site.location.'.$place['key'].'.type') }}</span><h3>{{ __('site.location.'.$place['key'].'.name') }}</h3><address>{{ __('site.location.'.$place['key'].'.address') }}</address><p>{{ __('site.location.'.$place['key'].'.directions') }}</p><a class="outline-link" href="https://www.google.com/maps/dir/?api=1&amp;destination={{ urlencode($place['query']) }}" target="_blank" rel="noopener noreferrer">{{ __('site.location.directions_button') }} <span aria-hidden="true">↗</span></a></div><div class="location-map"><iframe src="https://www.google.com/maps?q={{ urlencode($place['query']) }}&amp;output=embed" title="{{ __('site.location.'.$place['key'].'.map_title') }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div></article>
+   @endforeach
+  </div>
  </div></section>
 
  <section class="contact" id="contacto"><div class="container contact-inner"><p class="section-number">06</p><p class="kicker">{{ __('site.contact.kicker') }}</p><h2>{!! __('site.contact.title') !!}</h2><p>{{ __('site.contact.text') }}</p><div class="booking-note">{{ __('site.contact.note') }}</div><x-whatsapp-link>{{ __('site.contact.whatsapp') }}</x-whatsapp-link><p class="contact-person">{{ config('chateau.contact.name') }} · <a href="tel:+5491151205507">{{ config('chateau.contact.phone') }}</a></p></div></section>

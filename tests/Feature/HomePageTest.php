@@ -44,4 +44,22 @@ class HomePageTest extends TestCase
             ->assertSee('data-language-link', false)
             ->assertDontSee('data-lightbox-caption', false);
     }
+
+    public function test_sections_follow_the_requested_order_and_show_both_locations(): void
+    {
+        $response = $this->get('/')->assertOk();
+        $content = $response->getContent();
+
+        $this->assertLessThan(strpos($content, 'id="departamento"'), strpos($content, 'id="cabanas"'));
+        $this->assertLessThan(strpos($content, 'id="comodidades"'), strpos($content, 'id="departamento"'));
+
+        $response
+            ->assertSee('Primero, las cabañas')
+            ->assertSee('Luego, el departamento')
+            ->assertSee('Ubicaciones')
+            ->assertSee('Latitud Catedral')
+            ->assertSee('google.com/maps/dir/', false)
+            ->assertSee('Mapa interactivo de las cabañas Chateau Catedral')
+            ->assertSee('Mapa interactivo del departamento Latitud Catedral');
+    }
 }
