@@ -34,10 +34,7 @@
  <section class="amenities-section" id="comodidades"><div class="container"><div class="section-title"><p>03</p><div><span>{{ __('site.amenities.eyebrow') }}</span><h2>{{ __('site.amenities.title') }}</h2></div></div>
   <div class="amenities-columns">
    <article class="amenity-panel"><span class="amenity-label">{{ __('site.amenities.cabins') }}</span><div class="comfort-grid">@foreach(__('site.amenities.items') as $item)<div><h3>{{ $item['title'] }}</h3><p>{{ $item['text'] }}</p></div>@endforeach</div></article>
-   <article class="amenity-panel"><span class="amenity-label">{{ __('site.amenities.apartment') }}</span><div class="apartment-details">
-    <div><h3>{{ __('site.apartment.inside_title') }}</h3><ul>@foreach(__('site.apartment.inside') as $item)<li>{{ $item }}</li>@endforeach</ul></div>
-    <div><h3>{{ __('site.apartment.building_title') }}</h3><ul>@foreach(__('site.apartment.building') as $item)<li>{{ $item }}</li>@endforeach</ul></div>
-   </div></article>
+   <article class="amenity-panel"><span class="amenity-label">{{ __('site.amenities.apartment') }}</span><div class="comfort-grid">@foreach(__('site.amenities.apartment_items') as $item)<div><h3>{{ $item['title'] }}</h3><p>{{ $item['text'] }}</p></div>@endforeach</div></article>
   </div>
  </div></section>
 

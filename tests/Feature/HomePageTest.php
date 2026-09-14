@@ -21,6 +21,10 @@ class HomePageTest extends TestCase
             ->assertSee('output=embed', false)
             ->assertDontSee('Recorré cada alojamiento por separado')
             ->assertDontSee('Elegí tu alojamiento para ver el mapa')
+            ->assertDontSee('Abrí las indicaciones para obtener el recorrido preciso desde tu ubicación')
+            ->assertSee('fotos_nuevas/WhatsApp Image 2026-09-09 at 16.31.43.jpeg')
+            ->assertSee('fotos_nuevas/WhatsApp Image 2026d-09-09 at 16.31.44.jpeg')
+            ->assertSee('fotos_nuevas/WhatsApp Image 20s26-09-09 at 16.33.06.jpeg')
             ->assertSee('linkedin.com/in/juanmanueldiazarbues', false);
     }
 
@@ -58,6 +62,8 @@ class HomePageTest extends TestCase
         $response
             ->assertSee('Las Cabañas')
             ->assertSee('El Departamento')
+            ->assertSee('Capacidad y confort')
+            ->assertSee('En el edificio')
             ->assertSee('Ubicaciones')
             ->assertSee('Latitud Catedral')
             ->assertSee('google.com/maps/dir/', false)
