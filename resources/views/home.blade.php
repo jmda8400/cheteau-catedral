@@ -43,7 +43,7 @@
 
  <div class="photo-divider divider-fire" role="img" aria-label="{{ __('site.dividers.fire') }}"></div>
 
- <section class="gallery" id="galeria"><div class="container"><div class="section-title"><p>04</p><div><span>{{ __('site.gallery.eyebrow') }}</span><h2>{{ __('site.gallery.title') }}</h2><p class="gallery-intro">{{ __('site.gallery.intro') }}</p></div></div>
+ <section class="gallery" id="galeria"><div class="container"><div class="section-title"><p>04</p><div><span>{{ __('site.gallery.eyebrow') }}</span><h2>{{ __('site.gallery.title') }}</h2></div></div>
   @foreach([[__('site.gallery.cabins'), $cabinImages], [__('site.gallery.apartment'), $apartmentImages]] as [$groupTitle, $groupImages])
    <div class="gallery-group"><h3 class="gallery-group-title"><span>0{{ $loop->iteration }}</span>{{ $groupTitle }}</h3><div class="gallery-grid">@foreach($groupImages as $groupIndex => $photo)@php($index = $loop->parent->index * count($cabinImages) + $groupIndex)<button type="button" class="gallery-item item-{{ $groupIndex + 1 }}" data-gallery-index="{{ $index }}" aria-label="{{ __('site.gallery.open') }}: {{ $photo['alt'] }}"><x-image :file="$photo['file']" :alt="$photo['alt']" /><span class="gallery-action" aria-hidden="true">↗</span></button>@endforeach</div></div>
   @endforeach
@@ -52,7 +52,7 @@
  <div class="photo-divider divider-location" role="img" aria-label="{{ __('site.dividers.location') }}"></div>
 
  <section class="locations" id="ubicacion"><div class="container">
-  <div class="section-title"><p>05</p><div><span>{{ __('site.location.eyebrow') }}</span><h2>{{ __('site.location.title') }}</h2><p class="locations-intro">{{ __('site.location.intro') }}</p></div></div>
+  <div class="section-title"><p>05</p><div><span>{{ __('site.location.eyebrow') }}</span><h2>{{ __('site.location.title') }}</h2></div></div>
   <div class="locations-grid">
    @foreach([
     ['key' => 'cabins', 'query' => 'Martín Jereb 9857, San Carlos de Bariloche, Río Negro'],
