@@ -54,8 +54,8 @@ class HomePageTest extends TestCase
         $this->assertLessThan(strpos($content, 'id="comodidades"'), strpos($content, 'id="departamento"'));
 
         $response
-            ->assertSee('Primero, las cabañas')
-            ->assertSee('Luego, el departamento')
+            ->assertSee('Las Cabañas')
+            ->assertSee('El Departamento')
             ->assertSee('Ubicaciones')
             ->assertSee('Latitud Catedral')
             ->assertSee('google.com/maps/dir/', false)
