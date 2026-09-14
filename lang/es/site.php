@@ -6,7 +6,7 @@ return [
     'hero' => ['discover' => 'Descubrir'],
     'nav' => ['cabins' => 'Las cabañas', 'apartment' => 'Departamento', 'amenities' => 'Comodidades', 'gallery' => 'Galería', 'location' => 'Ubicaciones', 'book' => 'Reservar'],
     'cabins' => ['title' => 'Las cabañas', 'p1' => 'Ubicadas en la base del Cerro Catedral, Chateau Catedral combina la calidez de la madera y la piedra con espacios pensados para descansar y compartir.', 'p2' => 'A solo 200 metros de las pistas, cada una ofrece 150 m² cubiertos y capacidad para hasta 7 personas. Tres dormitorios en suite brindan privacidad, mientras que el living con chimenea y el quincho propio invitan a disfrutar después de un día en la montaña.'],
-    'amenities' => ['eyebrow' => 'Todo lo que incluye tu estadía', 'title' => 'Comodidades', 'cabins' => 'Primero, las cabañas', 'apartment' => 'Luego, el departamento', 'items' => [
+    'amenities' => ['eyebrow' => 'Todo lo que incluye tu estadía', 'title' => 'Comodidades', 'cabins' => 'Las Cabañas', 'apartment' => 'El Departamento', 'items' => [
         ['title' => 'Para compartir', 'text' => 'Quincho propio cubierto con parrilla, cocina completa y barra con cava de vinos.'],
         ['title' => 'Confort', 'text' => 'Chimenea, piso radiante y agua caliente de alta recuperación.'],
         ['title' => 'Descanso', 'text' => 'Tres dormitorios con baño privado, jacuzzi en la suite principal y practicuna.'],
