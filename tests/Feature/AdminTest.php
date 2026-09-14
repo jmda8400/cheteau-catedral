@@ -17,10 +17,10 @@ class AdminTest extends TestCase
     {
         $this->get('/admin')->assertOk()->assertSee('Ingresar');
 
-        $this->post('/admin/login', ['username' => 'felipe', 'password' => 'incorrecta'])
+        $this->post('/admin/login', ['username' => 'Felipe', 'password' => 'incorrecta'])
             ->assertSessionHasErrors('username');
 
-        $this->post('/admin/login', ['username' => 'felipe', 'password' => 'scarinci'])
+        $this->post('/admin/login', ['username' => 'Felipe', 'password' => 'Scarinci2323$'])
             ->assertRedirect('/admin')
             ->assertSessionHas('admin_authenticated', true);
     }

@@ -6,8 +6,8 @@ return [
     'contact' => ['name' => 'Felipe Scarinci', 'phone' => '+54 9 11 5120-5507'],
     'whatsapp' => 'https://wa.me/5491151205507?text='.rawurlencode('Hola Felipe, estoy interesado/a en Chateau Catedral. Quisiera consultar disponibilidad y tarifa para una estadía.'),
     'admin' => [
-        'username' => env('ADMIN_USERNAME', 'felipe'),
-        'password' => env('ADMIN_PASSWORD', 'scarinci'),
+        'username' => env('ADMIN_USERNAME', 'Felipe'),
+        'password' => env('ADMIN_PASSWORD', 'Scarinci2323$'),
     ],
     'cabin_images' => [
         ['file' => 'WhatsApp Image 2026-09-09 at 16.33.35.jpeg', 'alt' => 'Fachada de Chateau Catedral cubierta de nieve'],
