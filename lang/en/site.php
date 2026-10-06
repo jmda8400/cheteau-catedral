@@ -10,7 +10,7 @@ return [
         ['title' => 'Time together', 'text' => 'Private covered barbecue room with grill, full kitchen, bar and wine cellar.'],
         ['title' => 'Comfort', 'text' => 'Fireplace, underfloor heating and high-recovery hot water.'],
         ['title' => 'Rest', 'text' => 'Three en-suite bedrooms, a hot tub in the main suite and a travel cot.'],
-        ['title' => 'Services', 'text' => 'Wi-Fi, DirecTV, linen changes, alarm and perimeter lighting.'],
+        ['title' => 'Services', 'text' => 'Wi-Fi, linen changes, alarm and perimeter lighting.'],
     ], 'apartment_items' => [
         ['title' => 'Spaces', 'text' => 'Living and dining areas, a full kitchen, a spacious main bedroom and a second bedroom with four beds.'],
         ['title' => 'Capacity and comfort', 'text' => 'Up to 6 guests, with the option of 2 extra beds in the lounge; 2 full bathrooms, a guest toilet and underfloor heating.'],
@@ -24,5 +24,5 @@ return [
         'cabins' => ['type' => 'The cabins', 'name' => 'Chateau Catedral', 'address' => 'Martín Jereb 9857, Villa Catedral', 'directions' => '200 metres from the slopes. From central Bariloche, take Avenida Bustillo and then the Cerro Catedral access road.', 'map_title' => 'Interactive map of the Chateau Catedral cabins'],
         'apartment' => ['type' => 'The apartment', 'name' => 'Latitud Catedral', 'address' => 'Villa Catedral, San Carlos de Bariloche', 'directions' => '300 metres from the slopes in Villa Catedral.', 'map_title' => 'Interactive map of the Latitud Catedral apartment'],
     ],
-    'contact' => ['kicker' => 'Enquiries and bookings', 'title' => 'Your next getaway<br>starts here', 'text' => 'Ask us about availability and rates for your travel dates.', 'note' => 'A 50% deposit is required to confirm your booking. The balance is payable upon arrival. Bookings are non-refundable.', 'whatsapp' => 'Enquire on WhatsApp'],
+    'contact' => ['kicker' => 'Enquiries and bookings', 'title' => 'Your next getaway<br>starts here', 'text' => 'Ask us about availability and rates for your travel dates.', 'note' => 'Check-in: 15:00. Check-out: 10:00. A 50% deposit is required to confirm your booking. The balance is payable upon arrival. Bookings are non-refundable.', 'whatsapp' => 'Enquire on WhatsApp'],
 ];
