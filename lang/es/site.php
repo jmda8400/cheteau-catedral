@@ -10,7 +10,7 @@ return [
         ['title' => 'Para compartir', 'text' => 'Quincho propio cubierto con parrilla, cocina completa y barra con cava de vinos.'],
         ['title' => 'Confort', 'text' => 'Chimenea, piso radiante y agua caliente de alta recuperación.'],
         ['title' => 'Descanso', 'text' => 'Tres dormitorios con baño privado, jacuzzi en la suite principal y practicuna.'],
-        ['title' => 'Servicios', 'text' => 'Wi-Fi, DirecTV, cambio de blancos, alarma e iluminación perimetral.'],
+        ['title' => 'Servicios', 'text' => 'Wi-Fi, cambio de blancos, alarma e iluminación perimetral.'],
     ], 'apartment_items' => [
         ['title' => 'Espacios', 'text' => 'Estar, comedor, cocina completa, un dormitorio principal amplio y un segundo dormitorio con cuatro camas.'],
         ['title' => 'Capacidad y confort', 'text' => 'Hasta 6 personas, con opción de sumar 2 camas en el living; 2 baños completos, toilette y piso radiante.'],
@@ -24,5 +24,5 @@ return [
         'cabins' => ['type' => 'Las cabañas', 'name' => 'Chateau Catedral', 'address' => 'Martín Jereb 9857, Villa Catedral', 'directions' => 'A 200 metros de las pistas.', 'map_title' => 'Mapa interactivo de las cabañas Chateau Catedral'],
         'apartment' => ['type' => 'El departamento', 'name' => 'Latitud Catedral', 'address' => 'Villa Catedral, San Carlos de Bariloche', 'directions' => 'A 300 metros de las pistas, dentro de Villa Catedral.', 'map_title' => 'Mapa interactivo del departamento Latitud Catedral'],
     ],
-    'contact' => ['kicker' => 'Consultas y reservas', 'title' => 'Tu próxima escapada<br>empieza acá', 'text' => 'Consultanos por disponibilidad y tarifas para las fechas de tu viaje.', 'note' => 'Para confirmar la reserva solicitamos una seña del 50 %. El saldo se abona al ingresar. La reserva no tiene devolución.', 'whatsapp' => 'Consultar por WhatsApp'],
+    'contact' => ['kicker' => 'Consultas y reservas', 'title' => 'Tu próxima escapada<br>empieza acá', 'text' => 'Consultanos por disponibilidad y tarifas para las fechas de tu viaje.', 'note' => 'Check-in: 15 hs. Check-out: 10 hs. Para confirmar la reserva solicitamos una seña del 50 %. El saldo se abona al ingresar. La reserva no tiene devolución.', 'whatsapp' => 'Consultar por WhatsApp'],
 ];

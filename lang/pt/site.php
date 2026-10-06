@@ -10,7 +10,7 @@ return [
         ['title' => 'Para compartilhar', 'text' => 'Espaço gourmet coberto e privativo com churrasqueira, cozinha completa, bar e adega.'],
         ['title' => 'Conforto', 'text' => 'Lareira, piso aquecido e água quente de alta recuperação.'],
         ['title' => 'Descanso', 'text' => 'Três suítes, jacuzzi na suíte principal e berço portátil.'],
-        ['title' => 'Serviços', 'text' => 'Wi-Fi, DirecTV, troca de roupas de cama, alarme e iluminação perimetral.'],
+        ['title' => 'Serviços', 'text' => 'Wi-Fi, troca de roupas de cama, alarme e iluminação perimetral.'],
     ], 'apartment_items' => [
         ['title' => 'Ambientes', 'text' => 'Sala de estar e jantar, cozinha completa, um quarto principal espaçoso e um segundo quarto com quatro camas.'],
         ['title' => 'Capacidade e conforto', 'text' => 'Até 6 pessoas, com opção de 2 camas extras na sala; 2 banheiros completos, lavabo e piso aquecido.'],
@@ -24,5 +24,5 @@ return [
         'cabins' => ['type' => 'As cabanas', 'name' => 'Chateau Catedral', 'address' => 'Martín Jereb 9857, Villa Catedral', 'directions' => 'A 200 metros das pistas. Do centro de Bariloche, siga pela Avenida Bustillo e depois pela estrada de acesso ao Cerro Catedral.', 'map_title' => 'Mapa interativo das cabanas Chateau Catedral'],
         'apartment' => ['type' => 'O apartamento', 'name' => 'Latitud Catedral', 'address' => 'Villa Catedral, San Carlos de Bariloche', 'directions' => 'A 300 metros das pistas, em Villa Catedral.', 'map_title' => 'Mapa interativo do apartamento Latitud Catedral'],
     ],
-    'contact' => ['kicker' => 'Consultas e reservas', 'title' => 'Sua próxima viagem<br>começa aqui', 'text' => 'Consulte disponibilidade e tarifas para as datas da sua viagem.', 'note' => 'Para confirmar a reserva, solicitamos um sinal de 50%. O saldo é pago na chegada. A reserva não é reembolsável.', 'whatsapp' => 'Consultar pelo WhatsApp'],
+    'contact' => ['kicker' => 'Consultas e reservas', 'title' => 'Sua próxima viagem<br>começa aqui', 'text' => 'Consulte disponibilidade e tarifas para as datas da sua viagem.', 'note' => 'Check-in: 15h. Check-out: 10h. Para confirmar a reserva, solicitamos um sinal de 50%. O saldo é pago na chegada. A reserva não é reembolsável.', 'whatsapp' => 'Consultar pelo WhatsApp'],
 ];
